@@ -16,10 +16,15 @@ class JobViewModel: ViewModelType {
     let disposeBag = DisposeBag()
     
     init() {
-        input.search.map {
-            return Network.sharedAPI.getJobKorea(searchText: $0) + Network.sharedAPI.getJobKorea(searchText: $0)
-        }.bind(to: output.searchResult)
-        .disposed(by: disposeBag)
+        input.search
+            .subscribe(onNext: {
+                let ob = Observable.combineLatest(Network.sharedAPI.getJobKorea(searchText: $0),
+                                                  Network.sharedAPI.getSaramin(searchText: $0), resultSelector: { ($0, $1) })
+                ob.subscribe(onNext: { //[weak self] in
+                    print(($0 ?? []) + ($1 ?? []))
+                    self.output.searchResult.accept(($0 ?? []) + ($1 ?? []))
+                }).disposed(by: self.disposeBag)
+            }).disposed(by: self.disposeBag)
     }
 }
 
