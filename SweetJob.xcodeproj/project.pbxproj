@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		09F756EE26327342004AE05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F756EC26327342004AE05E /* LaunchScreen.storyboard */; };
 		09F756F926327342004AE05E /* SweetJobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F756F826327342004AE05E /* SweetJobTests.swift */; };
 		09F7570426327342004AE05E /* SweetJobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7570326327342004AE05E /* SweetJobUITests.swift */; };
+		09F7572926329DAE004AE05E /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7572826329DAE004AE05E /* Job.swift */; };
+		09F7573226329DEB004AE05E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7573126329DEB004AE05E /* Network.swift */; };
+		09F7573E26329FF4004AE05E /* JobTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7573D26329FF4004AE05E /* JobTableVIewCell.swift */; };
+		09F757582632BA92004AE05E /* JobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F757572632BA92004AE05E /* JobViewModel.swift */; };
+		09F757602632C1BB004AE05E /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7575F2632C1BB004AE05E /* ViewModelProtocol.swift */; };
+		2A427C3B0C30EA0CEF5AE148 /* Pods_SweetJob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F588627D2BC3C3FA973833 /* Pods_SweetJob.framework */; };
+		708C47D67D77277D52639516 /* Pods_SweetJobTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B980F9F693AE8CD45052E /* Pods_SweetJobTests.framework */; };
+		CE78E3AE93D79F99C2B06E34 /* Pods_SweetJob_SweetJobUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAA7B418D0DBD4DA0207E7E /* Pods_SweetJob_SweetJobUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02407FD910386BEEA52D896C /* Pods-SweetJobTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetJobTests.debug.xcconfig"; path = "Target Support Files/Pods-SweetJobTests/Pods-SweetJobTests.debug.xcconfig"; sourceTree = "<group>"; };
 		09F756DE26327340004AE05E /* SweetJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F756E126327340004AE05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F756E326327340004AE05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,19 @@
 		09F756FF26327342004AE05E /* SweetJobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetJobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F7570326327342004AE05E /* SweetJobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetJobUITests.swift; sourceTree = "<group>"; };
 		09F7570526327342004AE05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F7572826329DAE004AE05E /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		09F7573126329DEB004AE05E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		09F7573D26329FF4004AE05E /* JobTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableVIewCell.swift; sourceTree = "<group>"; };
+		09F757572632BA92004AE05E /* JobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewModel.swift; sourceTree = "<group>"; };
+		09F7575F2632C1BB004AE05E /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		19F588627D2BC3C3FA973833 /* Pods_SweetJob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetJob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329450AF7305B0DAB179B8CF /* Pods-SweetJob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetJob.debug.xcconfig"; path = "Target Support Files/Pods-SweetJob/Pods-SweetJob.debug.xcconfig"; sourceTree = "<group>"; };
+		395001B8BCF8E47F9BD18D7A /* Pods-SweetJob-SweetJobUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetJob-SweetJobUITests.debug.xcconfig"; path = "Target Support Files/Pods-SweetJob-SweetJobUITests/Pods-SweetJob-SweetJobUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BAA7B418D0DBD4DA0207E7E /* Pods_SweetJob_SweetJobUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetJob_SweetJobUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43838E5652D7215B0FB2DBD9 /* Pods-SweetJob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetJob.release.xcconfig"; path = "Target Support Files/Pods-SweetJob/Pods-SweetJob.release.xcconfig"; sourceTree = "<group>"; };
+		AD3B980F9F693AE8CD45052E /* Pods_SweetJobTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetJobTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5398481A86BE46673EC5748 /* Pods-SweetJob-SweetJobUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetJob-SweetJobUITests.release.xcconfig"; path = "Target Support Files/Pods-SweetJob-SweetJobUITests/Pods-SweetJob-SweetJobUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC64ECD25CF1A869BC63706C /* Pods-SweetJobTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetJobTests.release.xcconfig"; path = "Target Support Files/Pods-SweetJobTests/Pods-SweetJobTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A427C3B0C30EA0CEF5AE148 /* Pods_SweetJob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708C47D67D77277D52639516 /* Pods_SweetJobTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE78E3AE93D79F99C2B06E34 /* Pods_SweetJob_SweetJobUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,8 @@
 				09F756F726327342004AE05E /* SweetJobTests */,
 				09F7570226327342004AE05E /* SweetJobUITests */,
 				09F756DF26327340004AE05E /* Products */,
+				371D14BE328199D26D8932F7 /* Pods */,
+				17E7A65B3A0780062A35E873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +128,13 @@
 			children = (
 				09F756E126327340004AE05E /* AppDelegate.swift */,
 				09F756E326327340004AE05E /* SceneDelegate.swift */,
-				09F756E526327340004AE05E /* ViewController.swift */,
-				09F756E726327340004AE05E /* Main.storyboard */,
+				09F7573026329DD6004AE05E /* Network */,
+				09F7572726329D94004AE05E /* ViewController */,
+				09F7571B26329D7B004AE05E /* Model */,
+				09F7573926329FDA004AE05E /* View */,
+				09F757562632BA81004AE05E /* ViewModel */,
 				09F756EA26327342004AE05E /* Assets.xcassets */,
+				09F756E726327340004AE05E /* Main.storyboard */,
 				09F756EC26327342004AE05E /* LaunchScreen.storyboard */,
 				09F756EF26327342004AE05E /* Info.plist */,
 			);
@@ -128,6 +159,70 @@
 			path = SweetJobUITests;
 			sourceTree = "<group>";
 		};
+		09F7571B26329D7B004AE05E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09F7572826329DAE004AE05E /* Job.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09F7572726329D94004AE05E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				09F756E526327340004AE05E /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		09F7573026329DD6004AE05E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				09F7573126329DEB004AE05E /* Network.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		09F7573926329FDA004AE05E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09F7573D26329FF4004AE05E /* JobTableVIewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09F757562632BA81004AE05E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09F7575F2632C1BB004AE05E /* ViewModelProtocol.swift */,
+				09F757572632BA92004AE05E /* JobViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17E7A65B3A0780062A35E873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19F588627D2BC3C3FA973833 /* Pods_SweetJob.framework */,
+				3BAA7B418D0DBD4DA0207E7E /* Pods_SweetJob_SweetJobUITests.framework */,
+				AD3B980F9F693AE8CD45052E /* Pods_SweetJobTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		371D14BE328199D26D8932F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				329450AF7305B0DAB179B8CF /* Pods-SweetJob.debug.xcconfig */,
+				43838E5652D7215B0FB2DBD9 /* Pods-SweetJob.release.xcconfig */,
+				395001B8BCF8E47F9BD18D7A /* Pods-SweetJob-SweetJobUITests.debug.xcconfig */,
+				C5398481A86BE46673EC5748 /* Pods-SweetJob-SweetJobUITests.release.xcconfig */,
+				02407FD910386BEEA52D896C /* Pods-SweetJobTests.debug.xcconfig */,
+				FC64ECD25CF1A869BC63706C /* Pods-SweetJobTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09F7570826327342004AE05E /* Build configuration list for PBXNativeTarget "SweetJob" */;
 			buildPhases = (
+				7A290735C209A625DDF2B574 /* [CP] Check Pods Manifest.lock */,
 				09F756DA26327340004AE05E /* Sources */,
 				09F756DB26327340004AE05E /* Frameworks */,
 				09F756DC26327340004AE05E /* Resources */,
+				4774E2949A8A861298AF4D27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09F7570B26327342004AE05E /* Build configuration list for PBXNativeTarget "SweetJobTests" */;
 			buildPhases = (
+				A6DE391815846B87B9F8525A /* [CP] Check Pods Manifest.lock */,
 				09F756F026327342004AE05E /* Sources */,
 				09F756F126327342004AE05E /* Frameworks */,
 				09F756F226327342004AE05E /* Resources */,
@@ -170,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09F7570E26327342004AE05E /* Build configuration list for PBXNativeTarget "SweetJobUITests" */;
 			buildPhases = (
+				3F5FACF8CE07D6BB0C5A9743 /* [CP] Check Pods Manifest.lock */,
 				09F756FB26327342004AE05E /* Sources */,
 				09F756FC26327342004AE05E /* Frameworks */,
 				09F756FD26327342004AE05E /* Resources */,
+				AE4E846F356CF2E592BDC0C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +353,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F5FACF8CE07D6BB0C5A9743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetJob-SweetJobUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4774E2949A8A861298AF4D27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetJob/Pods-SweetJob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetJob/Pods-SweetJob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweetJob/Pods-SweetJob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A290735C209A625DDF2B574 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetJob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6DE391815846B87B9F8525A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetJobTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE4E846F356CF2E592BDC0C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetJob-SweetJobUITests/Pods-SweetJob-SweetJobUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetJob-SweetJobUITests/Pods-SweetJob-SweetJobUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweetJob-SweetJobUITests/Pods-SweetJob-SweetJobUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09F756DA26327340004AE05E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F757602632C1BB004AE05E /* ViewModelProtocol.swift in Sources */,
+				09F7573226329DEB004AE05E /* Network.swift in Sources */,
+				09F7573E26329FF4004AE05E /* JobTableVIewCell.swift in Sources */,
+				09F757582632BA92004AE05E /* JobViewModel.swift in Sources */,
 				09F756E626327340004AE05E /* ViewController.swift in Sources */,
 				09F756E226327340004AE05E /* AppDelegate.swift in Sources */,
 				09F756E426327340004AE05E /* SceneDelegate.swift in Sources */,
+				09F7572926329DAE004AE05E /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +641,7 @@
 		};
 		09F7570926327342004AE05E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 329450AF7305B0DAB179B8CF /* Pods-SweetJob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +660,7 @@
 		};
 		09F7570A26327342004AE05E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43838E5652D7215B0FB2DBD9 /* Pods-SweetJob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +679,7 @@
 		};
 		09F7570C26327342004AE05E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02407FD910386BEEA52D896C /* Pods-SweetJobTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +701,7 @@
 		};
 		09F7570D26327342004AE05E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC64ECD25CF1A869BC63706C /* Pods-SweetJobTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +723,7 @@
 		};
 		09F7570F26327342004AE05E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395001B8BCF8E47F9BD18D7A /* Pods-SweetJob-SweetJobUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +743,7 @@
 		};
 		09F7571026327342004AE05E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5398481A86BE46673EC5748 /* Pods-SweetJob-SweetJobUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
