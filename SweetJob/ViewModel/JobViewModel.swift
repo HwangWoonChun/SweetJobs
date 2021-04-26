@@ -16,9 +16,10 @@ class JobViewModel: ViewModelType {
     let disposeBag = DisposeBag()
     
     init() {
-        input.search.map { Network.sharedAPI.getSaramin(searchText: $0) }
-            .bind(to: output.searchResult)
-            .disposed(by: disposeBag)
+        input.search.map {
+            return Network.sharedAPI.getJobKorea(searchText: $0) + Network.sharedAPI.getJobKorea(searchText: $0)
+        }.bind(to: output.searchResult)
+        .disposed(by: disposeBag)
     }
 }
 
